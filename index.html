@@ -981,6 +981,32 @@
 
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+<!-- paradise slider js -->
 
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8"></script>
+        <script src="assets/js/gmaps.min.js"></script>
+        <script>
+            var map = new GMaps({
+                el: '.ourmap',
+                lat: -12.043333,
+                lng: -77.028333,
+                scrollwheel: false,
+                zoom: 15,
+                zoomControl: true,
+                panControl: false,
+                
+                streetViewControl: false,
+                mapTypeControl: false,
+                overviewMapControl: false,
+                clickable: false,
+                styles: [{'stylers': [{'hue': 'gray'}, {saturation: -100},
+                            {gamma: 0.80}]}]
+            });
+
+        </script>
+
+
+
+	    
     </body>
 </html>
